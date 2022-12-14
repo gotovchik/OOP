@@ -3,17 +3,20 @@ package homework_0;
 public class HotDrink extends Drink {
     private int temperature;
 
-    public HotDrink(int id, String name, double volume, int temperature) {
-        super(id, name, volume);
+    public HotDrink(int id, String name, double volume, int temperature, int price) {
+        super(id, name, volume, price);
         this.temperature = temperature;
     }
 
-
     @Override
     public String toString() {
-        return this.name + ", volume = " + this.volume + ", temperature = " + temperature; 
+        return this.id + " " + this.name + ", volume = " + this.volume + ", temperature = " + temperature + ", price = "
+                + price;
 
     }
-    s
-    
+
+    public int getTemperature() {
+        return temperature;
+    }
+
 }
