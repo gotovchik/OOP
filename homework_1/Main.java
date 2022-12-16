@@ -12,9 +12,11 @@ public class Main {
         students.put("Мария Кузнецова", "5.0");
         students.put("Иван Иванов", "4.8"); 
 
-        WriteInTxt writeTxt = new WriteInTxt(students);
-        writeTxt.writeFile();
-        WriteInJson writeJson = new WriteInJson(students);
-        writeJson.writeFile();
+        WriteInTxt txt = new WriteInTxt(students);
+        txt.writeFile();
+        WriteInJson json = new WriteInJson(students);
+        json.writeFile();
+        WriteInXml xml = new WriteInXml(students);
+        xml.writeFile();
     }
 }
