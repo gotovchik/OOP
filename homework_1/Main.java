@@ -14,5 +14,7 @@ public class Main {
 
         WriteInTxt writeTxt = new WriteInTxt(students);
         writeTxt.writeFile();
+        WriteInJson writeJson = new WriteInJson(students);
+        writeJson.writeFile();
     }
 }
