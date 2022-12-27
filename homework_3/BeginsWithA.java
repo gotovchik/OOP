@@ -7,5 +7,5 @@ public class BeginsWithA implements IsGood<String> {
     public boolean isGood(String str) {
         return str.toLowerCase().charAt(0) == ch;
     }
-  
+
 }
